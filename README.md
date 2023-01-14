@@ -94,15 +94,15 @@ To run tests make sure you are in the main folder, and then you can run this com
 
 ## What did I use?
 ###SOLID
-1- Single: for single action Work 
-2- Open-close : for add anther action
-3- Liskov Substitution  : in doAction in Account data 
-4- Dependency Inversion : to invert TransactionAction in parameter method doAction
+    • Single: for single action Work
+    • Open-close : for add anther action
+    • Liskov Substitution  : in doAction in Account data
+    • Dependency Inversion : to invert TransactionAction in parameter method doAction
 
 ###Design patterns
 Used Adapter Design Patter in Actions Directory by create interface and its concretes implement it
 
 ###Static Analyzer
-1-phpstan : level 4
-2-phpcs   : PSR2
+    • phpstan : level 4
+    • phpcs   : PSR2
 
