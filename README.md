@@ -32,30 +32,30 @@ If you don't have composer, you can get it from [Composer](https://getcomposer.o
 
 ## How to  Run the application
 
-####To GetAllAccountsInTheSystem 
+### To GetAllAccountsInTheSystem 
 ```
 ./vendor/phpunit/phpunit/phpunit --filter testGetAllAccountsInTheSystem
 ```
 
-####To GetTheBalanceOfaSpecificAccount
+#### To GetTheBalanceOfaSpecificAccount
 ```
 ./vendor/phpunit/phpunit/phpunit --filter testGetTheBalanceOfaSpecificAccount
 ```
 
 
-####To GetAllAccountTransactionsSortedByComments
+### To GetAllAccountTransactionsSortedByComments
 ```
 ./vendor/phpunit/phpunit/phpunit --filter testGetAllAccountTransactionsSortedByComments
 ```
 
 
-####To GetAllAccountTransactionsSortedByDateTime
+#### To GetAllAccountTransactionsSortedByDateTime
 ```
 ./vendor/phpunit/phpunit/phpunit --filter testGetAllAccountTransactionsSortedByDateTime
 ```
 
 
-####To DepositIsWorking
+#### To DepositIsWorking
 ```
 ./vendor/phpunit/phpunit/phpunit --filter testDepositIsWorking
 ```
@@ -66,12 +66,12 @@ If you don't have composer, you can get it from [Composer](https://getcomposer.o
 ./vendor/phpunit/phpunit/phpunit --filter testWithdrawIsWorking
 ```
 
-####To TransferFromTHeFirstAccountToTheSecondAccount
+#### To TransferFromTHeFirstAccountToTheSecondAccount
 ```
 ./vendor/phpunit/phpunit/phpunit --filter testTransferFromTHeFirstAccountToTheSecondAccount
 ```
 
-####To CreateAccount
+#### To CreateAccount
 ```
 ./vendor/phpunit/phpunit/phpunit --filter testCreateAccount
 ```
@@ -93,7 +93,7 @@ To run tests make sure you are in the main folder, and then you can run this com
 ```
 
 ## What did I use?
-###SOLID
+### SOLID
 ```
     • Single: for single action Work
     • Open-close : for add anther action
@@ -101,11 +101,11 @@ To run tests make sure you are in the main folder, and then you can run this com
     • Dependency Inversion : to invert TransactionAction in parameter method doAction
 ```
 
-###Design patterns
+### Design patterns
 ```
   • Used Adapter Design Patter in Actions Directory by create interface and its concretes implement it
 ```
-###Static Analyzer
+### Static Analyzer
 ```
     • phpstan : level 4
     • phpcs   : PSR2
