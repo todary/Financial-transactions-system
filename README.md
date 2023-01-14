@@ -32,57 +32,52 @@ If you don't have composer, you can get it from [Composer](https://getcomposer.o
 
 ## How to  Run the application
 
-### To GetAllAccountsInTheSystem 
+### To get all accounts in the system 
 ```
 ./vendor/phpunit/phpunit/phpunit --filter testGetAllAccountsInTheSystem
 ```
 
-#### To GetTheBalanceOfaSpecificAccount
+#### To get the balance of a specific account
 ```
 ./vendor/phpunit/phpunit/phpunit --filter testGetTheBalanceOfaSpecificAccount
 ```
 
 
-### To GetAllAccountTransactionsSortedByComments
-```
-./vendor/phpunit/phpunit/phpunit --filter testGetAllAccountTransactionsSortedByComments
-```
-
-
-#### To GetAllAccountTransactionsSortedByDateTime
-```
-./vendor/phpunit/phpunit/phpunit --filter testGetAllAccountTransactionsSortedByDateTime
-```
-
-
-#### To DepositIsWorking
+#### To perform an operation Deposit
 ```
 ./vendor/phpunit/phpunit/phpunit --filter testDepositIsWorking
 ```
 
 
-####To WithdrawIsWorking
+#### To perform an operation Withdraw
 ```
 ./vendor/phpunit/phpunit/phpunit --filter testWithdrawIsWorking
 ```
 
-#### To TransferFromTHeFirstAccountToTheSecondAccount
+#### To perform an operation TransferFrom
 ```
 ./vendor/phpunit/phpunit/phpunit --filter testTransferFromTHeFirstAccountToTheSecondAccount
 ```
+
+
+### To get all account transactions sorted by comment in alphabetical order
+```
+./vendor/phpunit/phpunit/phpunit --filter testGetAllAccountTransactionsSortedByComments
+```
+
+
+#### To get all account transactions sorted by date
+```
+./vendor/phpunit/phpunit/phpunit --filter testGetAllAccountTransactionsSortedByDateTime
+```
+
+
 
 #### To CreateAccount
 ```
 ./vendor/phpunit/phpunit/phpunit --filter testCreateAccount
 ```
 
-
-to sort add anther parameter (sort) type(name | price)
-Example
-
-```
-index.php?type=name&name=test&sort=name  
-```
 
 ## Tests
 To run tests make sure you are in the main folder, and then you can run this command line :
@@ -95,8 +90,8 @@ To run tests make sure you are in the main folder, and then you can run this com
 ## What did I use?
 ### SOLID
 ```
-    • Single: for single action Work
-    • Open-close : for add anther action
+    • Single: Every class is used for single purpose only
+    • Open-close : for add another action wirtoud edditing old code
     • Liskov Substitution  : in doAction in Account data
     • Dependency Inversion : to invert TransactionAction in parameter method doAction
 ```
