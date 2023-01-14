@@ -1,5 +1,5 @@
 # Project Title
- Task
+Financial transactions system
 
 
 ## TASK
@@ -94,15 +94,20 @@ To run tests make sure you are in the main folder, and then you can run this com
 
 ## What did I use?
 ###SOLID
+```
     • Single: for single action Work
     • Open-close : for add anther action
     • Liskov Substitution  : in doAction in Account data
     • Dependency Inversion : to invert TransactionAction in parameter method doAction
+```
 
 ###Design patterns
-Used Adapter Design Patter in Actions Directory by create interface and its concretes implement it
-
+```
+  • Used Adapter Design Patter in Actions Directory by create interface and its concretes implement it
+```
 ###Static Analyzer
+```
     • phpstan : level 4
     • phpcs   : PSR2
+```
 
